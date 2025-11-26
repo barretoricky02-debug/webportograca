@@ -1,1 +1,105 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ricardo Graca Barreto</title>
+  <link rel="stylesheet" href="webportograca.css">
+  <link rel="shortcut icon" href="img/LOGO GRACA.jpeg">
+</head>
+<body>
+
+  <header>
+    <h1 class="logo">Portofolio Saya</h1>
+    <nav id="nav-menu">
+      <a href="#about">Tentang</a>
+      <a href="#skills">Keahlian</a>
+      <a href="#portfolio">Proyek</a>
+      <a href="#contact">Kontak</a>
+    </nav>
+    <div class="menu-toggle" id="menu-toggle">☰</div>
+  </header>
+   
+  <section class="home" id="about">
+    <div class="home-content">
+      <div class="text">
+        <h2>Halo, Saya <span>Ricardo Graca Barreto</span></h2>
+        <h3>Siswa</h3>
+        <p>Saya adalah seorang siswa yang menyukai seni lukis dan gambar.</p>
+        <a href="halamanproyek.html" class="btn">Semua Proyek Saya</a>  
+      </div>
+      <div class="photo">
+        <img src="img/profile.jpeg" alt="Ricardo">
+      </div>
+    </div>
+  </section>
+
+  <section class="skills" id="skills">
+    <h2>Keahlian Saya</h2>
+    <div class="skill-grid">
+      <div class="skill-card">
+        <div class="icon">🎨</div>
+        <h3>Menggambar</h3>
+        <p>Menggambar dengan teknik bebas dan penuh emosi.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="portfolio" id="portfolio">
+    <h2>Proyek Terbaru</h2>
+
+  <div class="portfolio-grid">
+
+    <div class="item">
+      <img src="img/gambar 3.jpeg" alt="Proyek 1">
+      <div class="overlay">
+        <h3>Gambar digital</h3>
+        <p>"Pengecap"</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="img/PHTSHP 1.jpeg" alt="Proyek 2">
+      <div class="overlay">
+        <h3>Photoshop</h3>
+        <p>"Kristen Stewart"</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="img/gambar 4.jpeg" alt="Proyek 3">
+      <div class="overlay">
+        <h3>Gambar</h3>
+        <p>"Binar"</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <section class="contact" id="contact">
+    <h2>Hubungi Saya</h2>
+    <form>
+      <input type="text" placeholder="Nama Lengkap" required>
+      <input type="email" placeholder="Alamat Email" required>
+      <textarea placeholder="Pesan Anda" required></textarea>
+      <button type="submit" class="btn">Kirim Pesan</button>
+    </form>
+  </section>
+
+  <footer>
+    <div class="footer-social">
+    <a href="https://instagram.com/ricrdograca" target="_blank">Instagram</a>
+    <a href="https://facebook.com/ricardo.barreto.79199" target="_blank">Facebook</a>
+    <a href="https://youtube.com/@shmawss" target="_blank">YouTube</a>
+    </div>
+    <p>&copy; 2025 Ricardo Graca Barreto. Hak Cipta Dilindungi.</p>
+  </footer>
+
+  <script>
+    const toggle = document.getElementById('menu-toggle');
+    const nav = document.getElementById('nav-menu');
+    toggle.onclick = () => nav.classList.toggle('active');
+  </script>
+</body>
+</html>
 
