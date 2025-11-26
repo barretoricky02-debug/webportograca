@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proyek Ricardo | Portofolio</title>
+  <link rel="stylesheet" href="halamanproyek.css">
+  <link rel="shortcut icon" href="img/LOGO GRACA.jpeg">
+</head>
+
+<body>
+
+  <header>
+    <h1 class="logo">Proyek Saya</h1>
+    <nav id="nav-menu">
+      <a href="webportograca.html">Tentang</a>
+      <a href="webportograca.html">Keahlian</a>
+      <a href="webportograca.html">Proyek</a>
+      <a href="webportograca.html">Kontak</a>
+    </nav>
+    <div class="menu-toggle" id="menu-toggle">☰</div>
+  </header>
+
+  <section class="project-header">
+    <h2>Kumpulan Proyek Seni Saya</h2>
+    <p>Berikut adalah beberapa karya terbaik saya.</p>
+  </section>
+
+  <section class="project-gallery">
+
+    <div class="project-item">
+      <img src="img/gambar 1.jpeg" class="popup-img" alt="Proyek 1">
+      <div class="overlay">
+        <h3>Proyek 1</h3>
+        <p>Gambar sketsa.</p>
+      </div>
+    </div>
+
+    <div class="project-item">
+      <img src="img/gambar 2.jpeg" class="popup-img" alt="Proyek 2">
+      <div class="overlay">
+        <h3>Proyek 2</h3>
+        <p>Gambar sketsa.</p>
+      </div>
+    </div>
+
+    <div class="project-item">
+      <img src="img/gambar 3.jpeg" class="popup-img" alt="Proyek 3">
+      <div class="overlay">
+        <h3>Proyek 3</h3>
+        <p>Gambar Digital menggunakan Microsoft Paint.</p>
+      </div>
+    </div>
+
+    <div class="project-item">
+      <img src="img/gambar 4.jpeg" class="popup-img" alt="Proyek 4">
+      <div class="overlay">
+        <h3>Proyek 3</h3>
+        <p>Gambar sketsa.</p>
+      </div>
+    </div>
+
+    <div class="project-item">
+      <img src="img/gambar 5.jpeg" class="popup-img" alt="Proyek 5">
+      <div class="overlay">
+        <h3>Proyek 3</h3>
+        <p>Gambar sketsa.</p>
+      </div>
+    </div>
+
+    <div class="project-item">
+      <img src="img/PHTSHP 1.jpeg" class="popup-img" alt="Proyek 6">
+      <div class="overlay">
+        <h3>Proyek 3</h3>
+        <p>Edit <i>Photoshop</i>.</p>
+      </div>
+    </div>
+
+    <div class="project-item">
+      <img src="img/PHTSHP 2.jpeg" class="popup-img" alt="Proyek 7">
+      <div class="overlay">
+        <h3>Proyek 3</h3>
+        <p>Edit <i>Photoshop</i></p>
+      </div>
+    </div>
+
+  </section>
+
+
+  <div id="img-popup" class="popup">
+    <span class="close">&times;</span>
+    <img class="popup-content" id="popup-image">
+  </div>
+
+
+  <footer>
+    <div class="footer-social">
+      <a href="https://instagram.com/ricrdograca" target="_blank">Instagram</a>
+      <a href="https://facebook.com/Ricardo Barreto" target="_blank">Facebook</a>
+      <a href="https://youtube.com/@shmawss" target="_blank">YouTube</a>
+    </div>
+    <p>&copy; 2025 Ricardo Graca Barreto. Hak Cipta Dilindungi.</p>
+  </footer>
+
+<script>
+  // MENU TOGGLE
+  const toggle = document.getElementById('menu-toggle');
+  const nav = document.getElementById('nav-menu');
+  toggle.onclick = () => nav.classList.toggle('active');
+
+  // POPUP IMAGE FULLSCREEN
+  const popup = document.getElementById("img-popup");
+  const popupImg = document.getElementById("popup-image");
+  const closeBtn = document.querySelector(".close");
+
+  // EVENT CLICK GAMBAR
+  document.querySelectorAll(".popup-img").forEach(img => {
+    img.addEventListener("click", () => {
+      popup.style.display = "flex";
+      popupImg.src = img.src;
+    });
+  });
+
+  // CLOSE BUTTON
+  closeBtn.onclick = () => popup.style.display = "none";
+
+  // CLOSE POPUP BY CLICK BACKGROUND
+  popup.onclick = (e) => {
+    if (e.target === popup) popup.style.display = "none";
+  };
+</script>
+
+</body>
+</html>
