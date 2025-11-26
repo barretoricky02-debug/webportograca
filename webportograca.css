@@ -51,7 +51,7 @@ nav a:hover {
 }
 
 .home {
-  background: url(img/background.jpeg) center/cover no-repeat;
+  background: url(background.jpeg) center/cover no-repeat;
   padding: 8rem 8%;
   display: flex;
   justify-content: space-around;
@@ -281,3 +281,4 @@ footer {
     text-align: center;
   }
 }
+
